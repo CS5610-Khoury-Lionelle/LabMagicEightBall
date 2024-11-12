@@ -91,6 +91,12 @@ document.addEventListener("DOMContentLoaded", initializeEventListeners);
 <link rel="stylesheet" href="style.css">
 ```
 
+```html
+ <div class="center-block">   
+```
+
+
+
 
 ## 🚨 Submission Instructions
 
