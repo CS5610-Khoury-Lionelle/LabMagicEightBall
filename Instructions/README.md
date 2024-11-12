@@ -174,6 +174,8 @@ To break down the command:
 
 As we start working with full projects, you will find this will be setup by configuration files. 
 
+> [!CAUTION]
+> If you are unable to use the `tsc` command, make sure to meet with a TA or the instructor right away to get your system configured properly. You should not let system issues prevent you from learning! Also, make sure you go back to the [install resources](https://github.com/CS5610-Khoury-Lionelle/Resources/blob/main/ModuleResources.md) if you haven't. 
 
 #### Run the webpage
 
@@ -195,6 +197,10 @@ time you click the button, it should randomly update the page with a new message
 > better to update on the server / create a new page, and when it is better to update in
 > the page itself via javascript. 
 
+
+ As a reminder, your browser is acting as an interrupter and renderer for the information in the files, this is important to keep in mind throughout the semester! You can even use the console to modify the code, though it can be a bit complicated to do it that way. 
+
+At this point, you have a functional webpage, but it isn't very pretty. Let's look at styling it.
 
 ### Styling with CSS
 
