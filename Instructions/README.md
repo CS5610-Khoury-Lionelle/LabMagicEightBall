@@ -2,6 +2,18 @@
 
 For this lab, you will be a simple webpage that will randomly generate an answer based on the famous 'magic eight ball'. 
 
+- [Lab Magic Eight Ball](#lab-magic-eight-ball)
+  - [:star: Learning Outcomes :star:](#star-learning-outcomes-star)
+  - [:fire: Tasks](#fire-tasks)
+    - [HTML framing, semantic](#html-framing-semantic)
+    - [Functionality / Typescript](#functionality--typescript)
+      - [Compile your Typescript into Javascript](#compile-your-typescript-into-javascript)
+      - [Run the webpage](#run-the-webpage)
+    - [Styling with CSS](#styling-with-css)
+  - [🚨 Submission Instructions](#-submission-instructions)
+  - [:memo: Rubric](#memo-rubric)
+
+
 ## :star: Learning Outcomes :star:
 * Be able to write back HTML focusing on semantic markup
 * Be able to write basic CSS for styling
@@ -45,9 +57,7 @@ For this lab, you will be a simple webpage that will randomly generate an answer
 ```
 
 ### Functionality / Typescript
-```html
-<script src="eightball.js"></script>
-```
+
 
 ```ts
 // Function to get a random answer from the answers array
@@ -84,6 +94,46 @@ function initializeEventListeners(): void {
 document.addEventListener("DOMContentLoaded", initializeEventListeners);
 ```
 
+#### Compile your Typescript into Javascript
+
+To compile (convert) typescript into javascript run the following command. It is assuming you are running in the default assignment directory.
+
+```terminal
+tsc src/eightball.ts --outDir .
+```
+To break down the command:
+* `tsc` is the typescript compiler command (installed by `npm`)
+* `src/eightball.ts` - files you want to convert to javascript
+* `outDir` - by default it saves the files in the same location of the .ts files, 
+  but it is common to keep .ts separate from the .js. Since we were running from the 
+  assignment home directory, this should create the .js file in the same directory as the .html file. 
+
+> [!WARNING]
+> Make sure the `.js` is in the same file as your `.html` file - if not, go ahead and move it. 
+
+As we start working with full projects, you will find this will be setup by configuration files. 
+
+
+#### Run the webpage
+
+Inside the `<head>` section of your html file, add the following line. (often added just before the `</head>`). 
+
+```html
+<script src="eightball.js"></script>
+```
+
+This will link the javascript file to be loaded when the webpage loads into a browser
+
+Make sure you you refresh/reload the webpage, and try it out! If done correctly, every
+time you click the button, it should randomly update the page with a new message.
+
+> [!IMPORTANT]
+> You will notice the page isn't "refreshing/reloading" between button clicks. 
+> That is the power of javascript. We will continue to 
+> explore throughout the semester on when it is 
+> better to update on the server / create a new page, and when it is better to update in
+> the page itself via javascript. 
+
 
 ### Styling with CSS
 
@@ -96,6 +146,13 @@ document.addEventListener("DOMContentLoaded", initializeEventListeners);
 ```
 
 
+
+
+> [!NOTE]
+> While this lab didn't follow the 'common' directory structures, it is common
+> to keep javascript and css located in separate folders from the 
+> html files. You then reference those locations as part of the file location
+> in your link or script tag. 
 
 
 ## 🚨 Submission Instructions
