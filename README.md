@@ -6,6 +6,17 @@
 
 For Every assignment, make sure to put your name, semester, GitHub link to your assignment, and hosted URL. The github link will be the one auto created for you by github classroom. 
 
+## Discussion Items
+Use this section to write answers to the various discussion questions or add additional questions you may have. Treat this section along with your code as a study guide for yourself in the future, so put in here what helps you.
+
+
+1. Define the differences between HTML, Javascript, and CSS
+
+
+
+2. 
+
+
 
 ## Credits / Acknowledgements
 Give credit where credit is due. If you used various resources (websites, etc) make sure to reference them here. 
