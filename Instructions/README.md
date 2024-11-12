@@ -5,7 +5,7 @@ For this lab, you will be a simple webpage that will randomly generate an answer
 - [Lab Magic Eight Ball](#lab-magic-eight-ball)
   - [:star: Learning Outcomes :star:](#star-learning-outcomes-star)
   - [:fire: Tasks](#fire-tasks)
-    - [HTML framing, semantic](#html-framing-semantic)
+    - [HTML framing, semantic markup](#html-framing-semantic-markup)
     - [Functionality / Typescript](#functionality--typescript)
       - [Compile your Typescript into Javascript](#compile-your-typescript-into-javascript)
       - [Run the webpage](#run-the-webpage)
@@ -22,7 +22,21 @@ For this lab, you will be a simple webpage that will randomly generate an answer
 
 ## :fire: Tasks
 
-### HTML framing, semantic  
+To better understand a web page - we will break down the page into the three major components. 
+
+Throughout the lab, you will have discussion questions. You should fill out your answers in assignment [README.md](../README.md) in the discussion section. This will give you a study guide for future understanding, and help solidify the information.
+
+:memo: [Discussion Item]: Define the differences between HTML, Javascript, and CSS - make sure you use the terms semantic, functional, and style - and how they relate to each component of a webpage. 
+
+
+### HTML framing, semantic markup
+
+HTML is designed to setup the semantics of the webpage (even though it's purpose has been muddied over the years). Most notably, it breaks up a text document by
+defining `head` information about the document itself. `body` is content to display. That content to display can have `header`, `footer`, `headings` (as H1, H2, etc), `div` for divisions, `p` for paragraphs and more! While there are many designs that don't follow this pattern, good designers attempt to keep to it as strictly as possible. 
+
+However, as you will quickly find, it doesn't look "pretty" by default. 
+
+:fire: Take the following bit of HTML, and copy it into [eightball.html](../eightball.html). 
 
 ```html
 <!DOCTYPE html>
@@ -37,6 +51,8 @@ For this lab, you will be a simple webpage that will randomly generate an answer
 </body>
 </html>
 ```
+
+This setups the basic layout for the webpage, though there is very little information in it (just a blank page!).  However, if you open eightball.html in your browser, you will see the blank page (you should do that now). We recommend using your browser instead of the preview window in VSCode for now. 
 
 
 ```html
@@ -162,3 +178,6 @@ Submit via the assignment link in canvas. You will submit a link to your github 
 ## :memo: Rubric
 
 For labs, TAs will check to see if you completed the lab, but the grade is you completed it or not. 
+
+
+[Discussion Item]: ../README.md#Discussion%20Items
