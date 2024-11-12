@@ -43,7 +43,7 @@ However, as you will quickly find, it doesn't look "pretty" by default.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Eight Ball</title>
 </head>
@@ -102,7 +102,9 @@ Now, lets add the button and area we are going to update if people ask a questio
     <p id="answer"></p>
 ```
 
-Go ahead and refresh your page again. While it looks alright, "add your description here" doesn't make much sense, so :fire: go ahead and update the instructions of what we want people to do. In this case, if they click 'ask' a 'magic eight ball' random answer will be displayed. You could put something as simple as "Welcome to the Magic Eight Ball! Ask a question and click the button to see your answer." 
+:memo: [Discussion Item]: What is the `type` used for with button. Why would we have it `button` and not `submit` in this case? Note that submit is more common! 
+
+Go ahead and refresh your page again. While it looks alright, "add your description here" doesn't make much sense, so :fire: update the instructions of what we want people to do. In this case, if they click 'ask' a 'magic eight ball' random answer will be displayed. You could put something as simple as "Welcome to the Magic Eight Ball! Ask a question and click the button to see your answer." 
 
 :memo: [Discussion Item]: Using the inspect side bar, highlight various elements. What is it doing? What happens if you change an element in the side bar, then refresh?
 
@@ -110,17 +112,21 @@ For changing an element, you can double click on it, or right click depending on
 
 ![Example Inspect Change](example_inspect_change.png)
 
+At this point, we have a webpage, but it doesn't do much other than display information (and a button that does nothing). Did you remember to commit?
+
 ### Functionality / Typescript
 
+Now let's add functionality which means javascript (ECMAScript). However, javascript has a lot of design choices that make it hard for people with an OOP background (technically, javascript is a prototype language not OOP), so we will focus on writing in typescript and letting the typescript compiler "convert" it to javascript. This is becoming more and more common in web development, and TS is slowly taking over JS for that reason. 
+
+
+:fire: copy the following into [src/eightball.ts](src/eightball.js)
 
 ```ts
-// Function to get a random answer from the answers array
 function getRandomAnswer(): string {
     const randomIndex = Math.floor(Math.random() * magicEightBallAnswers.length);
     return magicEightBallAnswers[randomIndex];
 }
 
-// Function to update the answer in the DOM
 function updateAnswer(answer: string): void {
     const answerElement = document.getElementById("answer");
     if (answerElement) {
@@ -128,13 +134,13 @@ function updateAnswer(answer: string): void {
     }
 }
 
-// Function to handle the click event of the 'ask' button
+
 function handleAskButtonClick(): void {
     const answer = getRandomAnswer();
     updateAnswer(answer);
 }
 
-// Function to initialize event listeners
+
 function initializeEventListeners(): void {
     const askButton = document.getElementById("ask");
     if (askButton) {
@@ -143,8 +149,9 @@ function initializeEventListeners(): void {
 }
 ```
 
+:task: Write comments in the typescript describing what each function does (and lines if the line isn't clear). This may seem tedious, but it will help you get a better idea of what is going on.  Make sure you have at least one line that highlights what `const` does for part of the variable declaration. 
+
 ```ts
-// Initialize event listeners when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", initializeEventListeners);
 ```
 
