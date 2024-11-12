@@ -1,3 +1,12 @@
+/**
+* Magic Eight Ball
+* 
+* This program simulates a Magic Eight Ball that gives random answers to questions.
+*
+* SOLUTION CODE - your code may vary
+
+*/
+
 // Define possible answers for the Magic Eight Ball
 const magicEightBallAnswers: string[] = [ 
     "It is certain.",
