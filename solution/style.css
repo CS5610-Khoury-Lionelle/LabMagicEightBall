@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: auto auto;
+    padding: 0;
+    width: 960px;
+    background-color: #333;
+    color: #f0f0f0;
+    height: 100%;   
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+}
+
+#ask {
+    text-align: center;
+    margin: auto auto;
+    margin-top: 50px;
+    width: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+.center-block {
+
+    display: flex; justify-content: center; align-items: center;
+}
+
+#answer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: purple;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 960px;;
+    height: 60px; /* Adjust the height as needed */
+    color: #f0f0f0;
+    text-align: center;
+    line-height: 60px; /* Center the text vertically */
+}
