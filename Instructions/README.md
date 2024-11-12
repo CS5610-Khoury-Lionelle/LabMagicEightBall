@@ -147,13 +147,13 @@ function initializeEventListeners(): void {
         askButton.addEventListener("click", handleAskButtonClick);
     }
 }
+
+document.addEventListener("DOMContentLoaded", initializeEventListeners);
 ```
 
 :task: Write comments in the typescript describing what each function does (and lines if the line isn't clear). This may seem tedious, but it will help you get a better idea of what is going on.  Make sure you have at least one line that highlights what `const` does for part of the variable declaration. 
 
-```ts
-document.addEventListener("DOMContentLoaded", initializeEventListeners);
-```
+:memo: [Discussion Item]: What is an event listener? Why would that be essential for webpages?
 
 #### Compile your Typescript into Javascript
 

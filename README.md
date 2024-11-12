@@ -22,6 +22,8 @@ Use this section to write answers to the various discussion questions or add add
 
 4. Using the inspect side bar, highlight various elements. What is it doing? What happens if you change an element in the side bar, then refresh?
 
+5. What is an event listener? Why would that be essential for webpages?
+
 
 
 ## Credits / Acknowledgements
