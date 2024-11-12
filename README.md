@@ -17,7 +17,7 @@ Use this section to write answers to the various discussion questions or add add
 2. What are elements in the `head`? What ones do you know? Which ones do you not know (search online what they mean)? 
 
 
-3. 
+3. Using the inspect side bar, highlight various elements. What is it doing? What happens if you change an element in the side bar, then refresh?
 
 
 

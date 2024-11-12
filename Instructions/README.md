@@ -71,8 +71,16 @@ After you click on it, if you are in a chromium based browser such as chrome, ed
 
 :memo: [Discussion Item]: What are elements in the `head`? What ones do you know? Which ones do you not know (search online what they mean)? 
 
+> [!TIP]
+> This is a great point to commit your project if you haven't yet. 
+> Good development has commits at key points, which is encouraged in this course.
 
 #### Adding to the body
+
+Great, now lets add something useful in the body. :fire: Add the following between
+the body tag. Note we kept the body tags in there, so you can see what
+we mean by 'adding between' means. In the future, we won't have them. 
+
 ```html
 <body> <!-- note this is showing you are in the body, don't duplicate -->
     <h1>Magic 8 Ball</h1>
@@ -82,6 +90,10 @@ After you click on it, if you are in a chromium based browser such as chrome, ed
 </body>
 ```
 
+Go back your webpage in the browser, and click the refresh button.  You should now see the content on the page. 
+
+Now, lets add the button and area we are going to update if people ask a question. :fire: Copy the following after the `</p>` and before the `<footer>` tags.
+
 ```html
 <!-- to be added between the P and footer element -->
     <div>    
@@ -90,6 +102,13 @@ After you click on it, if you are in a chromium based browser such as chrome, ed
     <p id="answer"></p>
 ```
 
+Go ahead and refresh your page again. While it looks alright, "add your description here" doesn't make much sense, so :fire: go ahead and update the instructions of what we want people to do. In this case, if they click 'ask' a 'magic eight ball' random answer will be displayed. You could put something as simple as "Welcome to the Magic Eight Ball! Ask a question and click the button to see your answer." 
+
+:memo: [Discussion Item]: Using the inspect side bar, highlight various elements. What is it doing? What happens if you change an element in the side bar, then refresh?
+
+For changing an element, you can double click on it, or right click depending on what you want to do. 
+
+![Example Inspect Change](example_inspect_change.png)
 
 ### Functionality / Typescript
 
@@ -181,6 +200,7 @@ time you click the button, it should randomly update the page with a new message
 ```
 
 
+> Most of this course we do not grade based on style outside of functional style (fixed spacing, margins, usability, etc). So if it doesn't look pretty, that is mostly fine! However, we do encourage you to make an attempt at making things look good. 
 
 
 > [!NOTE]
