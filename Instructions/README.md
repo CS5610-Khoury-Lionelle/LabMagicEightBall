@@ -54,6 +54,10 @@ However, as you will quickly find, it doesn't look "pretty" by default.
 
 This setups the basic layout for the webpage, though there is very little information in it (just a blank page!).  However, if you open eightball.html in your browser, you will see the blank page (you should do that now). We recommend using your browser instead of the preview window in VSCode for now. 
 
+![File Explorer](file_explorer.png)
+
+Note: on a mac, it may say Finder.  Once the file appears, go ahead and double click, and it should open in your preferred browser. 
+
 
 ```html
 <body> <!-- note this is showing you are in the body, don't duplicate -->
