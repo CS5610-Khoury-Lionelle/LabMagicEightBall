@@ -49,6 +49,41 @@ For this lab, you will be a simple webpage that will randomly generate an answer
 <script src="eightball.js"></script>
 ```
 
+```ts
+// Function to get a random answer from the answers array
+function getRandomAnswer(): string {
+    const randomIndex = Math.floor(Math.random() * magicEightBallAnswers.length);
+    return magicEightBallAnswers[randomIndex];
+}
+
+// Function to update the answer in the DOM
+function updateAnswer(answer: string): void {
+    const answerElement = document.getElementById("answer");
+    if (answerElement) {
+        answerElement.textContent = answer;
+    }
+}
+
+// Function to handle the click event of the 'ask' button
+function handleAskButtonClick(): void {
+    const answer = getRandomAnswer();
+    updateAnswer(answer);
+}
+
+// Function to initialize event listeners
+function initializeEventListeners(): void {
+    const askButton = document.getElementById("ask");
+    if (askButton) {
+        askButton.addEventListener("click", handleAskButtonClick);
+    }
+}
+```
+
+```ts
+// Initialize event listeners when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", initializeEventListeners);
+```
+
 
 ### Styling with CSS
 
