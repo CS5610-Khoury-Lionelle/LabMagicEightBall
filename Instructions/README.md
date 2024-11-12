@@ -6,6 +6,7 @@ For this lab, you will be a simple webpage that will randomly generate an answer
   - [:star: Learning Outcomes :star:](#star-learning-outcomes-star)
   - [:fire: Tasks](#fire-tasks)
     - [HTML framing, semantic markup](#html-framing-semantic-markup)
+      - [Adding to the body](#adding-to-the-body)
     - [Functionality / Typescript](#functionality--typescript)
       - [Compile your Typescript into Javascript](#compile-your-typescript-into-javascript)
       - [Run the webpage](#run-the-webpage)
@@ -58,7 +59,20 @@ This setups the basic layout for the webpage, though there is very little inform
 
 Note: on a mac, it may say Finder.  Once the file appears, go ahead and double click, and it should open in your preferred browser. 
 
+At this point, you should just be seeing an empty page. But if you right click on the page and go to inspect, you will have a side panel open up that will show the full page information. 
 
+Here is a quick screen shot of inspect on my computer, though it may vary from computer to computer on the location when you right click in the browser window. 
+
+![Inspect](inspect.png)
+
+After you click on it, if you are in a chromium based browser such as chrome, edge, or safari, it will open as a side bar. 
+
+![inspect side bar](inspect_sidebar.png)
+
+:memo: [Discussion Item]: What are elements in the `head`? What ones do you know? Which ones do you not know (search online what they mean)? 
+
+
+#### Adding to the body
 ```html
 <body> <!-- note this is showing you are in the body, don't duplicate -->
     <h1>Magic 8 Ball</h1>
@@ -75,6 +89,7 @@ Note: on a mac, it may say Finder.  Once the file appears, go ahead and double c
     </div>
     <p id="answer"></p>
 ```
+
 
 ### Functionality / Typescript
 

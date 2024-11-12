@@ -14,7 +14,10 @@ Use this section to write answers to the various discussion questions or add add
 
 
 
-2. 
+2. What are elements in the `head`? What ones do you know? Which ones do you not know (search online what they mean)? 
+
+
+3. 
 
 
 
