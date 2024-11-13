@@ -175,7 +175,7 @@ To break down the command:
 As we start working with full projects, you will find this will be setup by configuration files. 
 
 > [!CAUTION]
-> If you are unable to use the `tsc` command, make sure to meet with a TA or the instructor right away to get your system configured properly. You should not let system issues prevent you from learning! Also, make sure you go back to the [install resources](https://github.com/CS5610-Khoury-Lionelle/Resources/blob/main/ModuleResources.md) if you haven't. 
+> If you are unable to use the `tsc` command, make sure to meet with a TA or the instructor right away to get your system configured properly. You should not let system issues prevent you from learning! Also, make sure you go back to the [install resources](https://github.com/CS5610-Khoury-Lionelle/Resources/blob/main/RequiredTools.md) if you haven't. 
 
 #### Run the webpage
 
