@@ -10,7 +10,7 @@ For this lab, you will be a simple webpage that will randomly generate an answer
     - [Functionality / Typescript](#functionality--typescript)
       - [Compile your Typescript into Javascript](#compile-your-typescript-into-javascript)
       - [Run the webpage](#run-the-webpage)
-    - [Styling with CSS](#styling-with-css)
+    - [Styling with Cascading Style Sheets (CSS)](#styling-with-cascading-style-sheets-css)
   - [🚨 Submission Instructions](#-submission-instructions)
   - [:memo: Rubric](#memo-rubric)
 
@@ -202,19 +202,32 @@ time you click the button, it should randomly update the page with a new message
 
 At this point, you have a functional webpage, but it isn't very pretty. Let's look at styling it.
 
-### Styling with CSS
+### Styling with Cascading Style Sheets (CSS)
+
+Time to make it look better. CSS works both for colors but also to help modify the layout of the elements. We have already put in a default sheet (which you will modify). In order to make that sheet work, :fire: add the following inside of your `head` element.
 
 ```html
 <link rel="stylesheet" href="style.css">
 ```
 
+If you refresh your webpage after adding that element, you will see the colors update, but it would be nice to center the ask button. As such, we will want to apply a class to the surrounding `div` element. Add the following to the div.
+
+
 ```html
  <div class="center-block">   
 ```
 
+It is very common to use classes to help modify layout or have different elements. For example, you may use a classes to modify how links work and even handle style updates such as mouseover (when you move your mouse over an item). CSS can be very powerful, but also a bit difficult to use. 
+
+:fire: Take time to modify the style sheet. Come up with different colors, maybe add a link and style that link. Use this as a playground to learn various CSS options. 
+
+
+
 
 > Most of this course we do not grade based on style outside of functional style (fixed spacing, margins, usability, etc). So if it doesn't look pretty, that is mostly fine! However, we do encourage you to make an attempt at making things look good. 
 
+
+:memo: [Discussion Item]: List at least three elements (CSS or HTML) that we did not cover in this tutorial. :fire: Find a way to include them in our webpage. 
 
 > [!NOTE]
 > While this lab didn't follow the 'common' directory structures, it is common

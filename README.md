@@ -24,7 +24,7 @@ Use this section to write answers to the various discussion questions or add add
 
 5. What is an event listener? Why would that be essential for webpages?
 
-
+6. List at least three elements (CSS or HTML) that we did not cover in this tutorial. 
 
 ## Credits / Acknowledgements
 Give credit where credit is due. If you used various resources (websites, etc) make sure to reference them here. 
